@@ -36,15 +36,6 @@ runs = [
     traverse(inlines,1,2)
 ];
 
-print([
-    traverse(inlines,1,1),
-    traverse(inlines,3,1),
-    traverse(inlines,5,1),
-    traverse(inlines,7,1),
-    traverse(inlines,1,2)
-]);
-
-
 print("part 2:");
 total = 1;
 foreach(run; runs) {
