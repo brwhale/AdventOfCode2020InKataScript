@@ -42,8 +42,7 @@ func isValid2(pass) {
     chars = split(tokens[2]);
     len = length(chars);
     if (len <= index1 || len <= index2) {
-        index1 = 0;
-        index2 = 0;
+        return false;
     } 
     testchar = split(tokens[1], ":")[0];
     return (chars[index1] == testchar) != (chars[index2] == testchar);
